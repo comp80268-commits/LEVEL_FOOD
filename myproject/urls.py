@@ -11,7 +11,7 @@ from drf_spectacular.views import (
 
 urlpatterns = [
     # Главная страница ведёт на документацию API
-    path("", RedirectView.as_view(url="/api/docs/", permanent=False)),
+    path("", RedirectView.as_view()),
 
     path("admin/", admin.site.urls),
     path("api/", include("food.urls")),
