@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-local-dev-key-change-
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Локально DEBUG=True, на Render автоматически False.
-DEBUG = not IS_RENDER
+DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 CSRF_TRUSTED_ORIGINS = []
